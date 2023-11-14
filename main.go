@@ -19,8 +19,8 @@ func main() {
 	// Parse command-line arguments
 	numLength := flag.Int("length", 4, "length of the number")
 	flag.Parse()
-	var zero int = 0
-	var four int = 4
+	var zero = 0
+	var four = 4
 	if numLength == nil || numLength == &zero {
 		numLength = &four
 	}
