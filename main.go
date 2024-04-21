@@ -29,6 +29,8 @@ func main() {
 	fmt.Println(username)
 }
 
+// generateUsername generates a random username by selecting a random word from a given wordlist
+// and concatenating it with a random number of the specified length.
 func generateUsername(numLength int) string {
 	wordlistData, err := wordlist.ReadFile("eff_large_wordlist.txt")
 	if err != nil {
